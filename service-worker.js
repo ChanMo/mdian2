@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mdian2/precache-manifest.5aa92b2d45b3513e8ac29d5e889b91f6.js"
+  "/mdian2/precache-manifest.cd6dd9fb21599ebaa79e468636744ee2.js"
 );
 
 self.addEventListener('message', (event) => {

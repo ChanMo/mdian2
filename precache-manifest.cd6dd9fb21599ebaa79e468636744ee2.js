@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c0665e803a724b7f56e07efb07b0306a",
+    "revision": "6df68c13c1336a5309cf1e79bc3be7f8",
     "url": "/mdian2/index.html"
   },
   {
-    "revision": "a4a4058c7d37b9c401d8",
+    "revision": "bf4b81d4e6cc9766dc69",
     "url": "/mdian2/static/css/main.4aeb0487.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mdian2/static/js/2.2c0047ba.chunk.js"
   },
   {
-    "revision": "a4a4058c7d37b9c401d8",
-    "url": "/mdian2/static/js/main.99378525.chunk.js"
+    "revision": "bf4b81d4e6cc9766dc69",
+    "url": "/mdian2/static/js/main.30bb6e89.chunk.js"
   },
   {
     "revision": "1a47d5c98606d647e710",
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mdian2/static/media/bg1_xs.7623ea6b.png"
   },
   {
-    "revision": "22cd52142f66ce9b0f966076d52917f3",
-    "url": "/mdian2/static/media/bg2.22cd5214.jpg"
+    "revision": "30b7eda002152e35c70e7f56edadfd1f",
+    "url": "/mdian2/static/media/bg2.30b7eda0.jpg"
   },
   {
     "revision": "a471bfee77026fa5488405717f1df340",
