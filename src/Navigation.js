@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from './images/logo.png'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { Hidden, Container } from '@material-ui/core'
@@ -24,35 +23,31 @@ const Menu = styled.ul`
     padding: 0.25rem 0.5rem;
     text-decoration: none;
     font-size: 0.85rem;
-    color: rgba(32, 56, 88, 1);
+    color: ${props => props.light ? "white" : "rgba(32, 56, 88, 1)"};
     &:hover, &:active {
-      color: rgba(32, 56, 88, 1);
       font-weight: 800;
     }
   }
 `
 
-const Logo = styled.img`
-  height: 32px;
-`
-
-export default function Navigation() {
+export default function Navigation({light}) {
   return (
     <div>
       <Container>
         <Inner>
         <Link to="/">
-          <Logo src={logo} alt="logo" />
+          {light ? <img src={require("./images/logo_light.png")} alt="logo" height={32} /> : <img src={require("./images/logo.png")} alt="logo" height={32} />}
+
         </Link>
           <Hidden xsDown>
-        <Menu>
+        <Menu light={light}>
           <li><Link to="/">首页</Link></li>
-          <li><Link to="/">抖音小程序</Link></li>
-          <li><Link to="/">微信小程序</Link></li>
-          <li><Link to="/">会议支持系统</Link></li>
-          <li><Link to="/">APP定制</Link></li>
-          <li><Link to="/">渠道合作</Link></li>
-          <li><Link to="/">免费建站</Link></li>
+          <li><Link to="/douyin">抖音小程序</Link></li>
+          <li><Link to="/wechat">微信小程序</Link></li>
+          {/*<li><Link to="/cfss">会议支持系统</Link></li>*/}
+          <li><Link to="/app">APP定制</Link></li>
+          <li><Link to="/cooperation">渠道合作</Link></li>
+          <li><Link to="/free">免费建站</Link></li>
         </Menu>
           </Hidden>
         </Inner>

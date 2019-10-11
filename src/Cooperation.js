@@ -14,12 +14,6 @@ const data = [
   require('./images/dazhong.png'),
 ]
 
-const Main = styled.div`
-  background: rgba(242, 242, 242, 1);
-  box-shadow: 2px 4px 8px lightgrey;
-  margin: 4rem 0;
-`
-
 const Item = styled(Grid)`
   padding: 1rem;
 `

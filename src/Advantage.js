@@ -1,6 +1,5 @@
 import React from 'react'
 import Subtitle from './Subtitle'
-import styled from 'styled-components'
 import {Box, Container, Grid} from '@material-ui/core'
 
 const data = [
@@ -9,30 +8,6 @@ const data = [
   ['03', '高效', '令时间更有价值'],
   ['04', '安全', '更稳定的技术']
 ]
-
-const Item = styled(Grid)`
-  display: flex;
-  align-items: center;
-  margin-bottom: 1.5rem !important;
-`
-
-const Num = styled.div`
-  font-size: 3rem;
-  color: rgba(55, 92, 161, 1);
-  margin-right: .5rem;
-`
-const Title = styled.h4`
-  font-size: 1.15rem;
-  font-weight: 800;
-  color: rgba(51, 51, 51, 1);
-  margin: 0;
-`
-
-const Text = styled.p`
-  font-size: 0.8rem;
-  color: rgba(0, 0, 0, 1);
-  margin: 0;
-`
 
 export default function Advantage() {
   return (
