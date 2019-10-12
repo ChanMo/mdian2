@@ -4,6 +4,8 @@ import Navigation from './Navigation'
 import Subtitle from './Subtitle'
 import Footer from './Footer'
 import Section from './Section'
+import Call from './Call'
+
 
 function Main() {
   return (
@@ -90,6 +92,7 @@ export default function AppScreen() {
     <div>
       <Navigation />
       <img src={require("./images/banner_app.png")} alt="app" width="100%" />
+      <Call />
       <Main />
       <Kanban />
       <Reason />

@@ -5,17 +5,7 @@ import First from './First'
 import Subtitle from './Subtitle'
 import { Grid, Container, Box } from '@material-ui/core'
 import styled from 'styled-components'
-
-function Call() {
-  return (
-    <Box display="flex" justifyContent="center" mt={-2}>
-    <Box boxShadow={2} display="flex" justifyContent="center" alignItems="center" py={1} px={2} borderRadius={32} bgcolor="white">
-      <img src={require("./images/phone.png")} alt="phone" width={32} height={32} />
-      <Box fontSize={16} fontWeight={800} color="rgba(32, 56, 88, 1)">&nbsp;&nbsp;电话&nbsp;15550001234&nbsp;&nbsp;免费APP评估</Box>
-    </Box>
-    </Box>
-  )
-}
+import Call from './Call'
 
 const data = [
   ['正规公司','具有合法营业执照和独立法人代表，有良好的商业信誉和口碑'],
