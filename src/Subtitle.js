@@ -6,6 +6,7 @@ const Wrap = styled.h3`
   position: relative;
   font-weight: 800;
   text-align: center;
+  font-size: 1.4rem;
   color: ${props => props.dark ? 'rgba(32, 56, 88, 1)' : 'white'};
   &:after {
     position: absolute;

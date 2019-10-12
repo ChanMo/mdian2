@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { Hidden, Container } from '@material-ui/core'
+import { Box, Hidden, Container } from '@material-ui/core'
 
 const Inner = styled.div`
   display: flex;
@@ -32,7 +32,7 @@ const Menu = styled.ul`
 
 export default function Navigation({light}) {
   return (
-    <div>
+    <Box>
       <Container>
         <Inner>
         <Link to="/">
@@ -52,6 +52,6 @@ export default function Navigation({light}) {
           </Hidden>
         </Inner>
       </Container>
-    </div>
+    </Box>
   )
 }

@@ -20,7 +20,7 @@ const Item = styled(Grid)`
 
 export default function Cooperation() {
   return (
-    <Box py={10}>
+    <Box pt={10} pb={10}>
     <Container maxWidth="lg">
       <Subtitle text='合作伙伴' second='COOPERATION' />
       <Box boxShadow={3} my={8} bgcolor="rgba(242, 242, 242, 1)">
