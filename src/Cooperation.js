@@ -23,7 +23,7 @@ export default function Cooperation() {
     <Box pt={10} pb={10}>
     <Container maxWidth="lg">
       <Subtitle text='合作伙伴' second='COOPERATION' />
-      <Box boxShadow={3} my={8} bgcolor="rgba(242, 242, 242, 1)">
+      <Box boxShadow={3} my={8} p={4} bgcolor="rgba(242, 242, 242, 1)">
       <Grid container spacing={2}>
         {data.map((item,index) => (
           <Item item sm={3} xs={6} key={index}>

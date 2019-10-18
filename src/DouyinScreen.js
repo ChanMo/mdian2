@@ -2,8 +2,13 @@ import React from 'react'
 import Section from './Section'
 import Navigation from './Navigation'
 import Footer from './Footer'
-import Subtitle from './Subtitle'
 import { Box, Grid, Container } from '@material-ui/core'
+import styled from 'styled-components'
+
+const Subtitle = styled.div`
+  text-align: center;
+  margin-bottom:  2rem;
+`
 
 function First() {
   return (
@@ -22,11 +27,13 @@ function Entry() {
   return (
     <Section>
       <Container maxWidth="md">
-        <Subtitle text="流量入口" second="TRAFFIC ENTRY" />
+        <Subtitle>
+          <img src={require("./images/douyin_t01.png")} alt="mdian" height="40" />
+        </Subtitle>
         <Grid container>
           {data.map((item,index) => (
           <Grid key={index} item xs={12} sm={4}>
-            <Box p={2}>
+            <Box p={4}>
             <img src={item} alt="douyin" />
             </Box>
           </Grid>
@@ -41,7 +48,10 @@ function Center() {
   return (
     <Section>
       <Container maxWidth="md">
-      <Subtitle text="流量矩阵" second="FLOW PLATFORM" />
+      <Subtitle>
+        <img src={require("./images/douyin_t02.png")} alt="mdian" height="60" />
+      </Subtitle>
+
       <Box py={8} textAlign="center">
         <img src={require("./images/douyin_01.png")} alt="douyin" />
       </Box>
@@ -57,7 +67,10 @@ function Feature() {
   return (
     <Section>
       <Container maxWidth="md">
-        <Subtitle text="抖音小程序特点" second="DOUYIN FEATURES" />
+        <Subtitle>
+          <img src={require("./images/douyin_t03.png")} alt="mdian" height="40" />
+        </Subtitle>
+
         <Box py={8} textAlign="center">
           <img src={require("./images/douyin_03.png")} alt="douyin" />
         </Box>
@@ -90,7 +103,10 @@ function Show() {
   return (
     <Section img={require("./images/douyin_bg.png")}>
       <Container maxWidth="md">
-        <Subtitle text="案例展示" second="CASE SHOW" />
+        <Subtitle>
+          <img src={require("./images/douyin_t04.png")} alt="mdian" height="40" />
+        </Subtitle>
+
         <Box py={8}>
           <Grid container>
             {data.map((item, index) => (

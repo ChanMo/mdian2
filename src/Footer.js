@@ -36,7 +36,7 @@ export default function Footer({light}) {
           </Box>
         </Grid>
         <Grid item xs={12} sm={4}>
-          <Box p={2}>
+          <Box p={2} textAlign="center">
           <Box component="img" mt={2} width={120} src={qrcode} alt="qrcode" />
           <Box component="p" fontSize={16} color={light ? "white" : "rgba(32, 56, 88, 1)"}>扫码咨询客服</Box>
           </Box>

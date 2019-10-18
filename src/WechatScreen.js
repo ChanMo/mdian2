@@ -17,7 +17,7 @@ function Intro() {
   return (
     <Section>
       <Container maxWidth="md">
-        <Subtitle text="什么是小程序" second="Applets" />
+        <Subtitle text="什么是小程序" second="Applets" theme="wechat" />
         <Box py={8}>
           <img src={require("./images/wechat_01.png")} alt="wechat" />
         </Box>
@@ -30,7 +30,7 @@ function Center() {
   return (
     <Section img={require("./images/bg5.png")}>
       <Container maxWidth="md">
-        <Subtitle text="流量入口" second="TRAFFIC ENTRY" dark={false} />
+        <Subtitle text="流量入口" second="TRAFFIC ENTRY" dark={false} theme="wechat" />
         <Box py={8}>
           <img src={require("./images/wechat_02.png")} alt="wechat" />
         </Box>
@@ -43,7 +43,7 @@ function Reason() {
   return (
     <Section>
       <Container maxWidth="md">
-        <Subtitle text="选择理由" second="REASON" />
+        <Subtitle text="选择理由" second="REASON" theme="wechat" />
         <Box py={8}>
           <img src={require("./images/wechat_03.png")} alt="wechat" />
         </Box>

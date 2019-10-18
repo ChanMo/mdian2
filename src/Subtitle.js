@@ -18,6 +18,7 @@ const Wrap = styled.h3`
     width: 50px;
     height: 4px;
     background: rgba(55, 92, 161, 1);
+    ${props => props.theme === "wechat" && "background:rgba(0, 194, 80, 1);"}
   }
 `
 
@@ -27,15 +28,16 @@ const Sub = styled.span`
   left: 50%;
   transform: translate(-50%, 0);
   color: ${props => props.dark ? "rgba(38, 80, 154, 0.2)" :  "rgba(255, 255, 255, 0.2)"};
+  ${props => props.theme === "wechat" && "color:rgba(0, 194, 80, 0.2);"}
   font-size: 1.2rem;
   letter-spacing: 3px;
 `
 
-export default function Subtitle({text, second=null, dark=true}) {
+export default function Subtitle({text, second=null, dark=true, theme='default'}) {
   return (
-    <Wrap dark={dark}>
+    <Wrap dark={dark} theme={theme}>
       {text}
-      {second && <Sub dark={dark}>{second}</Sub>}
+      {second && <Sub dark={dark} theme={theme}>{second}</Sub>}
     </Wrap>
   )
 }
