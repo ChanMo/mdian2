@@ -7,10 +7,12 @@ import AppScreen from './AppScreen'
 import WechatScreen from './WechatScreen'
 import DouyinScreen from './DouyinScreen'
 import FreeScreen from './FreeScreen'
+import Contact from './Contact'
 
 function App() {
   return (
     <Router>
+      <Contact />
       <Switch>
         <Route exact path="/"><Home /></Route>
         <Route path="/cooperation"><CooperationScreen /></Route>
