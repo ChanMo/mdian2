@@ -8808,6 +8808,13 @@ react-error-overlay@^6.0.3:
   resolved "https://registry.npm.taobao.org/react-error-overlay/download/react-error-overlay-6.0.3.tgz#c378c4b0a21e88b2e159a3e62b2f531fd63bf60d"
   integrity sha1-w3jEsKIeiLLhWaPmKy9TH9Y79g0=
 
+react-feather@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.npm.taobao.org/react-feather/download/react-feather-2.0.3.tgz#1453ff5d8c242f72b8c02846118fbd2d406375ad"
+  integrity sha1-FFP/XYwkL3K4wChGEY+9LUBjda0=
+  dependencies:
+    prop-types "^15.7.2"
+
 react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6:
   version "16.10.2"
   resolved "https://registry.npm.taobao.org/react-is/download/react-is-16.10.2.tgz?cache=0&sync_timestamp=1570137696201&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-is%2Fdownload%2Freact-is-16.10.2.tgz#984120fd4d16800e9a738208ab1fba422d23b5ab"

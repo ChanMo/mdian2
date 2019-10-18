@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { Box, Hidden, Container } from '@material-ui/core'
+import * as Icon from 'react-feather'
 
 const Inner = styled.div`
   display: flex;
@@ -30,7 +31,25 @@ const Menu = styled.ul`
   }
 `
 
-export default function Navigation({light}) {
+const VerticalMenu = styled(Box)`
+  a {
+    display: block;
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+  }
+`
+
+export default class Navigation extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      modal: false
+    }
+  }
+
+  render() {
+    const light = this.props.light
   return (
     <Box>
       <Container>
@@ -50,8 +69,29 @@ export default function Navigation({light}) {
           <li><Link to="/free">免费建站</Link></li>
         </Menu>
           </Hidden>
+          <Hidden mdUp>
+            <Box onClick={()=>this.setState({modal:true})}>
+              <Icon.Menu color="rgba(32, 56, 88, 1)" />
+          </Box>
+          </Hidden>
         </Inner>
       </Container>
+
+        {this.state.modal &&
+      <Box position="fixed" top="0" left="0" width="100%" height="100%" bgcolor="rgba(0,0,0,0.8)" zIndex="tooltip">
+        <VerticalMenu p={6} textAlign="center">
+          <Link to="/">首页</Link>
+          <Link to="/douyin">抖音小程序</Link>
+          <Link to="/wechat">微信小程序</Link>
+          <Link to="/app">APP定制</Link>
+          <Link to="/cooperation">渠道合作</Link>
+          <Link to="/free">免费建站</Link>
+          <Box onClick={()=>this.setState({modal:false})} py={2}>
+            <Icon.X color="white" size={24} />
+          </Box>
+        </VerticalMenu>
+      </Box>}
     </Box>
   )
+  }
 }
